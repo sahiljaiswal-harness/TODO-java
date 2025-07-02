@@ -47,12 +47,12 @@ curl -X POST http://localhost:8000/todos \
 
 Put Todos:
 ```bash
-curl -X POST http://localhost:8000/todos \
+curl -X POST http://localhost:8000/todos/006dbc21-1944-4fb7-bc88-ee5355565e06 \
   -H "Content-Type: application/json" \
   -d '{"title":"Buy milk","description":"Grocery store","completed":true}'
 ```
 
 Delete Todo (soft delete):
 ```bash
-curl -X DELETE http://localhost:8000/todos/<id>
+curl -X DELETE http://localhost:8000/todos/006dbc21-1944-4fb7-bc88-ee5355565e06
 ```
